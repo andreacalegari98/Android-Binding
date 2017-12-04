@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+
+    <remove-node path="/api/package[@name='it.near.sdk.operation']/interface[@name='NearItUserDataAPI.UserDataSendListener']" />
+    <remove-node path="/api/package[@name='it.near.sdk.geopolis.radar.neighbors']/interface[@name='ResolverApi.NeighborSearchListener']" />
+	<remove-node path="/api/package[@name='it.near.sdk.geopolis.radar']/interface[@name='TreeChangeCalculator.TreeChangeListener']" />
+
+	<add-node path="/api/package[@name='it.near.sdk.geopolis.radar.events']">
+        <class abstract="true" deprecated="not deprecated" name="GeopolisEvent">
+        </class>
+    </add-node>
+
+	<!--add-node path="/api/package[@name='it.near.sdk.geopolis.beacons.ranging']">
+        <class deprecated="not deprecated" name="ProximityListener">
+        </class>
+    </add-node-->
+
+
+	<!--add-node path="/api/package[@name='it.near.sdk.recipes.background']">
+        <class deprecated="not deprecated" abstract="false" extends="android.support.v4.app.JobIntentService" name="NearBackgroundJobIntentService" final="false" static="false" visibility="public">
+			<method abstract="false" deprecated="not deprecated" final="false" name="onHandleWork" native="false" return="void" static="false" synchronized="false" visibility="protected">
+                <parameter name="intent" type="android.content.Intent"/>
+             </method>
+
+             <method abstract="false" deprecated="not deprecated" final="false" name="sendSimpleNotification" native="false" return="void" static="false" visibility="public">
+                <parameter name="context" type="android.os.Context"/>
+                <parameter name="intent" type="android.content.Intent"/>
+             </method>
+
+             <method abstract="false" deprecated="not deprecated" final="false" name="sendNotifiedTracking" native="false" return="void" static="false" synchronized="false" visibility="protected">
+                <parameter name="intent" type="android.content.Intent"/>
+             </method>
+			
+        </class>
+		<class deprecated="not deprecated" abstract="false" extends="android.support.v4.content.WakefulBroadcastReceiver" name="AutoTrackingReceiver" final="false" static="false" visibility="public">
+            <method abstract="false" deprecated="not deprecated" final="false" name="onReceive" native="false" return="void" static="false" synchronized="false" visibility="public">
+                <parameter name="context" type="android.os.Context"/>
+				<parameter name="intent" type="android.content.Intent"/>
+             </method>
+
+             <method abstract="false" deprecated="not deprecated" final="false" name="getAutoTrackingTargetIntent" native="false" return="void" static="true" visibility="public">
+                <parameter name="context" type="android.os.Context"/>
+                <parameter name="intent" type="android.content.Intent"/>
+             </method>
+            
+        </class>
+    </add-node-->
+
+	<!--
+    <remove-node path="/api/package[@name='it.near.sdk.geopolis.radar.neighbors']/interface[@name='ResolverApi.NeighborSearchListener']" />
+
+	<remove-node path="/api/package[@name='it.near.sdk.geopolis.radar']/interface[@name='TreeChangeCalculator.TreeChangeListener']" />
+    -->
+  
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+</metadata>
