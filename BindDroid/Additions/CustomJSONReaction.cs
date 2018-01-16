@@ -7,9 +7,9 @@ namespace IT.Near.Sdk.Reactions.Customjsonplugin
 		{
 			NormalizeElement(element as IT.Near.Sdk.Reactions.Customjsonplugin.Model.CustomJSON);
 		}
-		protected override void InjectRecipeId(global::Java.Lang.Object element, string recipeId)
+        protected override void InjectRecipeExtras(global::Java.Lang.Object element, IT.Near.Sdk.Trackings.TrackingInfo trackingInfo)
 		{
-			InjectRecipeId(element as IT.Near.Sdk.Reactions.Customjsonplugin.Model.CustomJSON, recipeId);
+            InjectRecipeExtras(element as IT.Near.Sdk.Reactions.Customjsonplugin.Model.CustomJSON, trackingInfo);
 		}
     }
 }

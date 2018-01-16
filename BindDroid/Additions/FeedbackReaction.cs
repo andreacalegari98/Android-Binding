@@ -6,9 +6,9 @@
 		{
             NormalizeElement(element as IT.Near.Sdk.Reactions.Feedbackplugin.Model.Feedback);
 		}
-		protected override void InjectRecipeId(global::Java.Lang.Object element, string recipeId)
+        protected override void InjectRecipeExtras(global::Java.Lang.Object element, IT.Near.Sdk.Trackings.TrackingInfo trackingInfo)
 		{
-            InjectRecipeId(element as IT.Near.Sdk.Reactions.Feedbackplugin.Model.Feedback, recipeId);
+            InjectRecipeExtras(element as IT.Near.Sdk.Reactions.Feedbackplugin.Model.Feedback, trackingInfo);
 		}
     }
 }

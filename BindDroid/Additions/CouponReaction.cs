@@ -4,11 +4,11 @@
     {
 		protected override void NormalizeElement(global::Java.Lang.Object element)
 		{
-            NormalizeElement(element as IT.Near.Sdk.Reactions.Couponplugin.Model.Coupon);
+            NormalizeElement(element as Couponplugin.Model.Coupon);
 		}
-		protected override void InjectRecipeId(global::Java.Lang.Object element, string recipeId)
+        protected override void InjectRecipeExtras(global::Java.Lang.Object element, IT.Near.Sdk.Trackings.TrackingInfo trackingInfo)
 		{
-			InjectRecipeId(element as IT.Near.Sdk.Reactions.Couponplugin.Model.Coupon, recipeId);
+            InjectRecipeExtras(element as IT.Near.Sdk.Reactions.Couponplugin.Model.Coupon, trackingInfo);
 		}
     }
 }
